@@ -1,0 +1,428 @@
+ body {
+    font-family: 'Noto Sans', 'Helvetica Neue',Helvetica,sans-serif;
+    min-height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+.default-p{
+  margin:0px !important;
+}
+.main-body{
+	position: relative;
+	padding-bottom: 10px;
+	font-family: Open Sans,sans-serif;
+	
+}
+.tab-container{
+  display: none;
+}
+.active-tab-container{
+  display: inherit;
+}
+.btn-sm{
+  padding:5px;
+}
+.nav-container a{
+	font-weight: bold;
+}
+.section-container-padding{
+	padding:50px 0px;
+}
+.section-container-top-padding{
+  padding-top: 50px;
+}
+.section-container-margin{
+	margin:20px 0px;
+}
+.flex-container{
+  display: flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+}
+.flex-center{
+  justify-content: center;
+}
+.flex-space-between{
+  justify-content: space-between;
+}
+.flex-right{
+	justify-content: flex-end;
+}
+.flex-column{
+  flex-flow: column;
+}
+.flex-vertical-align{
+  align-items: center;
+}
+.flex-right{
+	justify-content: flex-end;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-stretch{
+  align-items: stretch;
+}
+.align-self-center{
+  align-self: center;
+}
+.align-self-left{
+  align-self: flex-start;
+}
+.align-self-right{
+  align-self: flex-end;
+}
+.col62{
+  flex: 1;
+  flex-grow: 0.5;
+}
+.col64{
+  flex: 1;
+  flex-grow: 0.3;
+}
+.col66{
+	flex-basis: 60%;
+  padding:0px 15px;
+}
+.col77{
+	flex-basis: 70%;
+	padding: 0px 15px;
+  max-width: 70%;
+}
+.col88{
+	flex-basis: 80%;
+	padding: 0px 15px;
+}
+.col100{
+  flex-basis: 100%;
+  padding: 0px 15px;
+  max-width: 100%;
+}
+.col99{
+  flex-basis: 90%;
+  padding: 0px 15px;
+}
+.col22{
+	flex-basis: 20%;
+	padding: 0px 15px;
+}
+.col25{
+  flex-basis: 25%;
+  padding: 0px 15px;
+}
+.col55{
+	flex-basis: 50%;
+	padding: 0px 15px;
+  max-width: 50%;
+}
+
+.col55:nth-of-type(1){
+	margin-left: 0px;
+}
+.col6{
+  flex: 1;
+  flex-grow: 0.5;
+  padding: 15px;
+}
+.col30{
+  flex-basis: 30%;
+  max-width: 30%;
+  padding: 0px 15px;
+}
+.col33{
+	flex-basis: 33.33%;
+  max-width: 33.33%;
+	padding: 0px 15px;
+}
+.col44{
+  flex-basis: 40%;
+  max-width: 40%;
+  padding: 0px 15px;
+}
+.col2{
+	flex: 1;
+  flex-grow: 0.2;
+}
+.col4{
+  flex: 1;
+  flex-grow: 0.3;
+}
+.f-paragraph{
+  font-size: 17px;
+  line-height: 1.5;
+}
+.f-paragraph-2{
+  font-size: 19px;
+  line-height: 1.5;
+}
+.overlay{
+	z-index: 1000;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom:0px;
+	background: #000000b3;
+	overflow:auto ;
+/*	display: none;
+*/}
+.fixed{
+  position: fixed;
+}
+.close-btn{
+/*	position: fixed;
+*/	top: 170px;
+  right: 50px;
+	cursor: pointer;
+	z-index: 200;
+
+}
+.close-btn a{
+	border: 1px solid white;
+	padding: 5px 10px;
+	border-radius: 
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 18px;
+	color: white;
+}
+
+.default-color{
+	color: #5a0000;
+}
+.default-background{
+	background-color: #5a0000;
+}
+.green-background{
+  background: #25d366;
+}
+.red-background{
+  background: #d9534f;  
+}
+.green-color{
+  background: #25d366;
+}
+.red-color{
+  background: #d9534f;  
+}
+.alt-background{
+	background: #e6e6e6;
+}
+.block{
+  width: 100%;
+}
+.lead-lg{
+  font-weight: bold;
+  font-size:39px;
+}
+.lead-xlg{
+  font-weight: bold;
+  font-size:49px;
+}
+.lead-xxlg{
+  font-weight: bold;
+  font-size:59px;
+}
+.lead-md{
+   font-weight: bold;
+  font-size:25px;
+}
+.lead-sm{
+  font-weight: bold;
+  font-size: 21px;
+}
+.bold{
+	font-weight: bold;
+}
+.align-center{
+	text-align: center;
+}
+
+.flat{
+	border-radius: 0px !important;
+}
+.default-button{
+	border-style: none;
+	color: white;
+}
+
+.mobile-menu{
+	width: 80%;
+	max-width: 300px;
+	position: absolute;
+ 	left: 0;
+ 	right: 0;
+ 	top: 0;
+ 	bottom: 0;
+ 	z-index:200;
+}
+.mobile-nav{
+	padding: 20px 10px;
+	height: 100%;
+	overflow-y: auto;
+}
+@keyframes slideIn {
+  10% {
+ 		margin-left: -50%
+  }
+  
+  
+   100% {
+ 		margin-left: 0px;
+
+  }
+}
+
+.nav-slide-out{
+	animation-duration: 1s;
+  animation-name: slideOut;
+  animation-iteration-count: 1;
+  overflow-y: hidden;
+  animation-fill-mode:forwards;
+}
+@keyframes slideOut {
+  10% {
+ 		margin-left: 0px;
+  }
+  
+  
+   100% {
+
+   	margin-left: -100%;
+  }
+}
+
+/*.page-fill{
+	padding: 25%;
+}*/
+.mobile-single-menu-head{
+	margin: 10px 0px;
+}
+.faq-container{
+	margin:40px 0px;
+}
+.single-faq-container{
+	margin:10px;
+}
+.single-faq-container .toggler_class span{
+	font-size: 18px;
+}
+.faq-question-header h1{
+	cursor: pointer;
+}
+.faq-tr h1{
+	margin-top: 0px;
+}
+
+.faq-tr{
+	margin-left: 20px;
+	width: 60%;
+}
+.faq-content{
+	display: none;
+	border-left: 3px solid #097b25;
+	padding: 10px;
+}
+.color-white{
+  color: white;
+}
+.image-flex-fix{
+  align-items: center;
+}
+.op_slider_img img{
+  width: 150px;
+}
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.info-box{
+  padding: 10px;
+  background: #dbdbdb;
+  align-self: center;
+  border:1px solid grey;
+}
+@media  (max-width: 320px){
+  .mobile-flex-center{
+    justify-content: center;
+  }
+
+}
+@media(max-width: 768px) {
+  .mobile-flex-vertical-align{
+    align-items: center;
+  }
+  .col11, .col22, .col33, .col44, .col55, .col66, .col77, .col88, .col99,.col100{
+    max-width: 100%;
+  }
+  .col36{
+      margin:0px 0px;
+    }
+  .col-mobile{
+    flex-grow: .9;
+  }
+  .pricing-table .col4{
+    border-right: 1px solid white
+  }
+  .border-box{
+    margin-top: 20px;
+  }
+
+  .col3{
+    flex-basis: 99%;
+  }
+  .col5{
+  	flex-basis: 100%;
+
+  }
+  .pricing-f .col6:nth-of-type(1){
+    border-style: none;
+    border-bottom: 1px solid white;
+
+  }
+  .close-btn{
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .lead-lg{
+    font-size: 30px;
+  }
+  .lead-xlg{
+    font-size: 40px;
+  }
+  .lead-md{
+/*    font-size: 20px;
+*/  }
+  .flex-responsive{
+    flex-flow: column wrap;
+  }
+  .step-container-body{
+    flex-grow: 1;
+  } 
+  .col62{
+    flex-grow: 0.8
+  }
+  
+  .col66, .col77, .col88, .col22, .col5, .col33{
+  	width: 100%;
+}

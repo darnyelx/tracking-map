@@ -1,0 +1,406 @@
+.body{
+  background: transparent !important;
+}
+.sidebar-menu{
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	width: 25%;
+	min-width: 250px;
+	background: white;
+	right: 0px;
+	top: 80px;
+	z-index: 33333333333333;
+	border:1px solid grey;
+}
+.toggle-sidemenu{
+	position: absolute;
+	left: -30px;
+	top:  0px;
+	width: 50px;
+	height: 50px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	z-index: -1;
+}
+.tiles-map{
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+@keyframes sideMenuslideOut {
+  10% {
+ 		right: : 5%
+  }
+  
+  
+   100% {
+ 		right: -25%;
+
+  }
+}
+
+.window-close{
+	animation-duration: 1s;
+  animation-name: sideMenuslideOut;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+@keyframes sideMenuslideIn {
+  10% {
+ 		right: -5%;
+  }
+  
+  
+   100% {
+
+   	right: 0;
+  }
+}
+
+.window-open{
+	animation-duration: 1s;
+  animation-name: sideMenuslideIn;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+
+.custom-input-container{
+	border-bottom: 1px solid #decfcf;
+}
+.c-tab-control{
+	background: #efefef;
+	padding: 12px;
+}
+.custom-input input{
+	border-style: none;
+	width: 100%;
+	background: none;
+	padding: 10px 0px;
+}
+.custom-input-submit button{
+	background: none;
+	border-style: none;
+}
+.drivers-tabs{
+	background: #efefef;
+	padding: 12px;
+}
+.driver-tile{
+	border-bottom: 1px solid #efefef;
+	padding: 5px 0px;
+	position: relative;
+}
+.places-tile{
+	border-bottom: 1px solid #efefef;
+	padding: 5px 5px;
+}
+#map {
+        height: 100vh;
+        width: 100%;
+      }
+  .map-bubble-content{
+  	background: white;
+	width: 300px;
+	padding: 5px 0px;
+	padding-top: 5px;
+	box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+	padding-top: 0px;
+  }
+  .map-buble-header{
+  	padding: 10px 0px;
+	background: #F9A81A;
+	color: white;
+  }
+     .map-img-container{
+     	width: 50px;
+     	height: 50px;
+     	border-radius: 50px;
+     	overflow: hidden;
+     }
+ /* The location pointed to by the popup tip. */
+      .popup-tip-anchor {
+        height: 0;
+        position: absolute;
+        /* The max width of the info window. */
+        width: 200px;
+      }
+      .popup-tip-anchor body{
+        background: transparent !important;
+      }
+      /* The bubble is anchored above the tip. */
+      .popup-bubble-anchor {
+        position: absolute;
+        width: 100%;
+        bottom: /* TIP_HEIGHT= */ 8px;
+        left: 0;
+        background: black;
+      }
+      /* Draw the tip. */
+      .popup-bubble-anchor::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* Center the tip horizontally. */
+        transform: translate(-50%, 0);
+        /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+        width: 0;
+        height: 0;
+        /* The tip is 8px high, and 12px wide. */
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: /* TIP_HEIGHT= */ 8px solid white;
+      }
+      /* The popup bubble itself. */
+      .popup-bubble-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -100%);
+        /* Style the info window. */
+        background-color: white;
+        border-radius: 5px;
+        font-family: sans-serif;
+        box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+      }
+.summary-type{
+	border-bottom: 2px solid #e87a25;
+}
+.summary-details{
+	margin-left: 5px;
+	color: grey;
+}
+.order-summary-container> .flex-container{
+	padding: 10px 0px;
+	margin: 10px 0px;
+	border-bottom:1px dashed #cbc3c3;
+}
+.truckka-back{
+	background: #F9A81A !important;
+}
+.grey{
+	color: grey;
+}
+.resource-desc-mini{
+	margin: 10px 0px;
+	border-bottom: 1px solid #a9a3a3;
+	padding: 10px 0px;
+}
+.document-body{
+	padding: 5px;
+	border-radius: 1px;
+	background: #f2f2f2;
+	border:1px solid grey;
+}
+.document-body img{
+	width: 100%;
+}
+.page-header{
+}
+#custom-page-head{
+ 	-webkit-box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  	-moz-box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  	box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);	
+  	background: white;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	height: auto;
+}
+.box-shadow{
+	-webkit-box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  	-moz-box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  	box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);	
+}
+.page-logo img{
+	width: 100%;
+	margin-top: 0px !important;
+}
+.page-content{
+	margin-top: 20px !important;
+}
+.white{
+	color: white !important;
+}
+.black{
+	color: black !important;
+}
+.sub-menu{
+	background: white !important;
+	padding: 0px !important;
+}
+.inner-nav-item{
+	border-bottom: 1px solid grey;
+}
+.sub-menu>li{
+	margin:0px;
+
+}
+.inner-nav-item>a:hover{
+	color: white !important;
+}
+.nav-item-head{
+	border-bottom: 2px solid white !important;
+}
+.summary-icon{
+	margin-top: -50px;
+}
+.summary-icon img{
+	width: 100px;
+}
+.summary-tag{
+	padding: 5px;
+	color: white;
+}
+.dashboard-stat2{
+	margin-bottom: 0px;
+	padding:5px;
+}
+.number{
+	margin-bottom: 0px;
+	padding: 10px;
+	width: 100%;
+}
+.display{
+	margin-bottom: 0px !important;
+}
+.append-selected-resources{
+  background: #dbdbdb;
+  border:1px dashed red;
+  padding:10px;
+  min-height: 50px;
+}
+.single-permission{
+	-webkit-box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  	-moz-box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  	box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);	
+	padding: 5px;
+	color: black;
+	cursor: pointer;
+}
+.single-permission p{
+	margin:0px;
+	margin-right: 5px;
+}
+.all-permission-container{
+	padding: 15px 10px;
+	background: white;
+		
+}
+.single-permission-container{
+	margin:5px;
+}
+.permission-selected{
+	color: white;
+	-webkit-box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 11px 15px 4px rgba(0, 0, 0, 0.1);
+  background: #e87a25 !important;
+}
+.permission_info{
+	cursor: initial;
+}
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 69px;
+	height: 58px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.custom-slider::before {
+
+   
+    height: 15px;
+    width: 19px;
+   
+
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.switcha{
+	margin: 0px;
+	width: 60px;
+	height: 33px;
+}
+.slidera{
+	margin: 0px;
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+.nav-toggle > .flex-container{
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+.margin-0{
+	margin:0px;
+}
+.padding-0{
+	padding:0px;
+}
+.table>thead>tr>td{
+	padding: 15px;
+	color:black;
+	border-left: 2px solid white;
+}
+.gross-amount td{
+	padding-top:15px !important;
+	border:none !important;
+}
+@media print {
+    thead{
+    	background-color: #F9A81A !important;
+    }
+    table {
+    	page-break-inside: avoid;
+    	-webkit-print-color-adjust: exact;
+
+    }
+  .page-container-bg-solid .page-content{
+  	background: white !important;
+  }
+}
